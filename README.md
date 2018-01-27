@@ -43,4 +43,5 @@
   * The applied code searches for the words of each topic dictionary in the dataframe. 
 5. Step: Getting data together for visualization!
   * Pivot data in order to visualize it (creating data point for every topic, for every year).
-  * Fin!
+  
+  ### Fin!
