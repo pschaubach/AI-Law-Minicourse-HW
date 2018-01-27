@@ -26,4 +26,21 @@
 * Afterwards all those words are lemmatized and the stoplist is applied.
 * The text is now cleaned.
 
-#### 
+### Step 4 - Topic Modeling Method Testing
+
+* Test the current model with LatentDirichletAllocation, Non-negative Matrix Factorization and Latent Semantic Analysis. 
+* Apply those topic modeling methods and check if you reach the right result. 
+
+### Step 5 - Topic Model Application to Data
+
+1. Step: run the model against the entire dataframe to collect the topics
+* By executing this code, all case descriptions are stacked together to receive one document consisting of all decisions.
+2. Step: take this model and apply it back to the dataframe to assign most likely topic to each case 
+* The topic modeling methods result specific probabilities which relate to the different topics. 
+3. Step: make a dictionary of the components that make up each topic from the original model
+* The code creates a dictionary for each topic consisting of 30 words. 
+4. Step: use this dictionary to "look up" the topic components and apply those to the dataframe
+* The applied code searches for the words of each topic dictionary in the dataframe. 
+5. Step: Getting data together for visualization!
+* Pivot data in order to visualize it (creating data point for every topic, for every year).
+* Fin!
